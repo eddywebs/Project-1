@@ -23,3 +23,12 @@ As far as the specific changes we'd like you to make. . .
 ### For 13 February
 
 TBA[dded]
+
+### In rough order of increasing complexity:
++ Shoot your own video and replace the one in Project-1
++ Head over to Google Fonts and select a new font to change the Header/Footer text to. Add the functionality for the down triangle to switch between waypoints.
++ Dynamically place text as you scroll; perhaps add a timing element/delay to the panel effects so that when you switch to a waypoint, there's a delay before, say a panel slides in or some text appears or. . .
++ Change the behavior of scrolling so that rather than the video seeking in time to a different point each time you scroll, create something more like Apple's site, where scrolling triggers transitions or cutscenes.  i.e. At some point, your script should basically be saying, "When I've scrolled this far, play that scene of the video."
++ Animate the emergence/arrival of the detail panels-- either via fade-in, slide-in, or a mechanism of your choice.
++ Similarly, animate the bottom panel sliding up when you've scrolled a certain amount.
++ Set up the nav bar so that when you hover over a waypoint, some text appears next to the waypoint.  This means you'll need to insert a div with a description in the right place depending on what you're hovering over.
