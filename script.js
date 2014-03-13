@@ -2,6 +2,9 @@ var scrollTotal = 1000;
 var scrolled = 0; // A variable to keep track of how far we've scrolled.
 var fractionScrolled = scrolled / scrollTotal;
 
+var downTriangle = document.getElementById("next-triangle");
+
+downTriangle.addEventListener("click", downClickHandler, false);
 
 // You can read more about the mosuewheel event at https://developer.mozilla.org/en-US/docs/DOM/DOM_event_reference/mousewheel
 if (document.addEventListener) {
@@ -39,10 +42,31 @@ function updateWaypoints() {
 	document.getElementById('Countdown').currentTime = fractionScrolled * 38.0;
 }
 
+function downClickHandler(e){
+	var currentActiveWayPoint = document.getElementsByClassName("active-waypoint");
+	//find the div of the with active-waypoint class
+	for(i=0; i<10;i++){
+		if(document.getElementById("waypoint-"+i)===currentActiveWayPoint[0]){
+			console.log("boo yeah"+i);
+			break;
+		}
+			
+	}
+	
+	scrolled = (i+1)*100;
+			updateWaypoints();
+
+	//updateWaypoints();
+	//waypointClickHandler(e);
+	console.log("boo!");
+}
+
 function waypointClickHandler(e) {
+	
 	console.log('click');
 	for (i = 0; i < waypoints.length; i++) {
 		if (waypoints[i] === this) {
+		//if(waypoints[i] ===)
 			scrolled = (i+1)*100;
 			updateWaypoints();
 			console.log(scrolled);
