@@ -137,6 +137,10 @@ nav ol li {
 	margin: 0;
 }
 
+nav ol li:hover {
+	background-color: #D12121;
+}
+
 .active-waypoint {
 	background-color: #D12121;
 }
