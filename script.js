@@ -53,12 +53,12 @@ function downClickHandler(e){
 			
 	}
 	
-	scrolled = (i+1)*100;
+	scrolled = (i+1)*200;
 			updateWaypoints();
 
 	//updateWaypoints();
 	//waypointClickHandler(e);
-	console.log("boo!");
+	console.log(scrolled);
 }
 
 function waypointClickHandler(e) {
