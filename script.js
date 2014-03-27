@@ -40,6 +40,7 @@ function updateWaypoints() {
 
 	// Seek to the proportional time of the 38s clip of Bey's "Countdown"
 	document.getElementById('Countdown').currentTime = fractionScrolled * 38.0;
+	document.getElementById('detail').getElementsByTagName('H1')[0].innerHTML= "Playback time at: "+document.getElementById('Countdown').currentTime+"s";
 }
 
 function downClickHandler(e){
