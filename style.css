@@ -21,13 +21,17 @@ header, footer {
 	line-height: 64px; /* By making the line-height as tall as the header, we vertically center the text */
 
 	color: #EEE;
-	font-family: "Lily Script One", cursive;
+	font-family: 'Playfair Display SC', serif; /*font-family: "Lily Script One", cursive; */
 	font-size: 2em;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.35em;
 
 	width: 100%;
+}
+
+footer {
+	font-weight: 700;
 }
 
 
