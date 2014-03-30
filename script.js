@@ -54,7 +54,7 @@ function downClickHandler(e){
 			
 	}
 	
-	scrolled = (i+1)*200;
+	scrolled = (i+2)*100;
 			updateWaypoints();
 
 	//updateWaypoints();
