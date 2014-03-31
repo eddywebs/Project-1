@@ -2,6 +2,23 @@ var scrollTotal = 1000;
 var scrolled = 0; // A variable to keep track of how far we've scrolled.
 var fractionScrolled = scrolled / scrollTotal;
 
+//document.getElementsByClassName('waypoint').innerHTML="<div class='left-tip' data-tip='hello'></div>";
+
+addToolTips();
+
+function addToolTips(){
+	for (i = 0; i < 10; i++) {
+		// Notice we constructed our li#id names to make this easy
+		var currentWaypoint = document.getElementById('waypoint-' + i);
+		var att=document.createAttribute("data-tips");
+		att.value="This is waypoint #"+i;
+		
+		currentWaypoint.setAttributeNode(att);
+		currentWaypoint.classList.add('left-tip');
+	}
+
+}
+
 var downTriangle = document.getElementById("next-triangle");
 
 downTriangle.addEventListener("click", downClickHandler, false);
